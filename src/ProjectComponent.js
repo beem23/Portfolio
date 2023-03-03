@@ -32,7 +32,7 @@ function ProjectComponent(props) {
         Projects.push(
             <li className="cards_item" key={uuid()}>
                 <div className="card">
-                    <div className="card_image"><img src={src} /></div>
+                    <div className="card_image"><img src={src} alt={title} /></div>
                     <div className={ProjectComponentTheme}>
                         <h2 className="card_title">{title}</h2>
                         <p className="card_text">{description}</p>

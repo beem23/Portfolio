@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import Wave from 'react-wavify';
 import './styles/BackgroundWavesStyles.css';
 
