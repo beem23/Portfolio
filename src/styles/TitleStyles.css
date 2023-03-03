@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+.SiteTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    position: absolute;
+    left: 20%;
+    z-index: 9;
+}
+
+.SiteTitleDark {
+    color: aliceblue;
+}
+
+.SiteTitleLight {
+    color: rgb(98, 98, 106);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .SiteTitle {
+        font-size: 1.5rem;
+        top: 5%;
+        left: 10%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .SiteTitle {
+        font-size: 3rem;
+        top: 2.5%;
+        left: 10%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .SiteTitle {
+        font-size: 3rem;
+        top: 2.5%;
+        left: 10%;
+    }
+}

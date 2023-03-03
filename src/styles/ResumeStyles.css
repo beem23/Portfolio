@@ -1,0 +1,13 @@
+.ResumeContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 0, 242);
+    overflow: auto;
+    /* Add a semi-transparent background */
+    z-index: 999;
+    /* Make sure the popup appears on top of other content */
+    /* Add any other styles you want for the popup content */
+}

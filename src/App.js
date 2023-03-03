@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import BackgroundWaves from './BackgroundWaves';
+import TimePull from './TimePull';
+import Menu from './Menu';
+import FindMe from './FindMe';
+import Title from './Title';
+import './styles/App.css';
+
+const apiKey = process.env.REACT_APP_API_KEY;
+const url = window.location.href.includes('localhost')
+  ? 'http://localhost:3001/data/'
+  : 'https://your-live-server.com/data/';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleToggle = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await fetch(`${url}${apiKey}`);
+      const data = await result.json();
+      setData(data);
+    };
+    fetchData();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title handleToggle={handleToggle} isDarkMode={isDarkMode} />
+      <FindMe />
+      <Menu data={data} isDarkMode={isDarkMode} />
+      <TimePull isDarkMode={isDarkMode} />
+      <BackgroundWaves isDarkMode={isDarkMode} />
     </div>
   );
 }

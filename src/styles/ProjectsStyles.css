@@ -1,0 +1,48 @@
+.ProjectsContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(100px);
+    overflow: auto;
+    /* Add a semi-transparent background */
+    z-index: 999;
+    /* Make sure the popup appears on top of other content */
+    /* Add any other styles you want for the popup content */
+}
+
+.ProjectsContainer>h1 {
+    font-size: 10rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-clip: text;
+    background-position: center top;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.h1Dark {
+    background-image: url('/NightTimeGIF.gif');
+}
+
+.h1Light {
+    background-image: url('/DaytimeGIF.gif');
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .ProjectsContainer>h1 {
+        font-size: 6rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .ProjectsContainer>h1 {
+        font-size: 8rem;
+    }
+}

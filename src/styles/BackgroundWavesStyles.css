@@ -1,0 +1,59 @@
+.waveContainer {
+    width: 50px;
+    /* width: 100%; */
+    height: 100vh;
+    z-index: -10;
+}
+
+.Wave {
+    /* transform: translateY(-100%); */
+    position: absolute;
+    bottom: 0%;
+    height: 100%;
+    opacity: .3;
+    z-index: 1;
+}
+
+.SwitchColorDark {
+    background-color: rgba(69, 43, 0, 0.5);
+}
+
+.SwitchColorLight {
+    background-color: rgba(247, 153, 2, 0.5);
+}
+
+.Wave2 {
+    /* transform: translateY(-100%); */
+    position: absolute;
+    bottom: 0%;
+    height: 80%;
+    opacity: .3;
+    z-index: 2;
+}
+
+.Wave3 {
+    /* transform: translateY(-200%); */
+    position: absolute;
+    bottom: 0%;
+    height: 75%;
+    opacity: .3;
+    z-index: 3;
+}
+
+.Wave4 {
+    /* transform: translateY(-300%); */
+    position: absolute;
+    bottom: 0%;
+    height: 65%;
+    opacity: .3;
+    z-index: 4;
+}
+
+.Wave5 {
+    /* transform: translateY(-400%); */
+    position: absolute;
+    bottom: 0%;
+    height: 50%;
+    opacity: .3;
+    z-index: 5;
+}

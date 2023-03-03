@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+.MenuContainer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    text-align: end;
+    z-index: 15;
+}
+
+.MenuContainer>h1 {
+    color: aliceblue;
+    transition: text-decoration 1s ease-in-out;
+    cursor: pointer;
+}
+
+.MenuContainer>h1:hover {
+    text-decoration: underline;
+    opacity: .5;
+}
+
+.fa-circle-xmark {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+    color: rgb(93, 121, 144);
+    font-size: 3rem;
+    margin: 20px;
+    opacity: .5;
+    transition: all .3s ease-in-out;
+}
+
+.fa-circle-xmark:hover {
+    opacity: 1;
+    font-size: 4rem;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .MenuContainer {
+        font-size: 1rem;
+        top: 20%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .MenuContainer {
+        font-size: 1.5rem;
+    }
+}

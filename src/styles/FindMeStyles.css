@@ -1,0 +1,20 @@
+.FindMeContainer {
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    z-index: 9;
+}
+
+.FindMeContainer>i {
+    margin: 1rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: aliceblue;
+    transition: color .3s ease-in-out;
+}
+
+.FindMeContainer>i:hover {
+    color: aqua;
+}

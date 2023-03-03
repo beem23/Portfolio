@@ -1,0 +1,17 @@
+.TimeContainer {
+    color: rgb(75, 170, 253);
+    /* background-color: black; */
+    text-align: end;
+    max-width: fit-content;
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
+
+.TimeContainer>h4 {
+    margin-bottom: 0%;
+}
+
+.Coordinates>p {
+    margin-top: 0%;
+}

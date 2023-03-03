@@ -1,0 +1,67 @@
+.SkillsAndExperienceContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(255, 238, 0); */
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    /* Add a semi-transparent background */
+    z-index: 999;
+    /* Make sure the popup appears on top of other content */
+    /* Add any other styles you want for the popup content */
+}
+
+.SkillsAndExperienceContainer>h1 {
+    font-size: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-clip: text;
+    background-position: center top;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .SkillsAndExperienceContainer>h1 {
+        font-size: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-clip: text;
+        background-position: center top;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .SkillsAndExperienceContainer>h1 {
+        font-size: 3.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-clip: text;
+        background-position: center top;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .SkillsAndExperienceContainer>h1 {
+        font-size: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-clip: text;
+        background-position: center center;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}

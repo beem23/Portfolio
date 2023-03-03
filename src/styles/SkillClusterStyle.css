@@ -1,0 +1,89 @@
+.SkillCluster {
+    /* background-color: blueviolet; */
+    width: 500px;
+    border-radius: 100%;
+    /* animation: rotate 15s linear infinite; */
+    /* transform-origin: 200px 50%; */
+    z-index: 10;
+}
+
+.SkillCluster>table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    color: rgb(25, 40, 54);
+    /* border: 1px solid black; */
+    -webkit-box-shadow: 28px 43px 40px 26px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 28px 43px 40px 26px rgba(0, 0, 0, 0.23);
+    box-shadow: 28px 43px 40px 26px rgba(0, 0, 0, 0.23);
+    border-radius: 10%;
+    background-color: rgba(240, 248, 255, 0.29);
+    text-align: center;
+    vertical-align: middle;
+    /* padding: 15px; */
+    /* opacity: .5; */
+    /* animation: rotateBack 15s linear infinite; */
+}
+
+td>h1 {
+    font-size: 4rem;
+}
+
+@keyframes rotateBack {
+    0% {
+        padding: 0px;
+        /* transform: rotate(0deg); */
+    }
+
+    50% {
+        padding: 25px;
+    }
+
+    100% {
+        padding: 0px;
+        /* transform: rotate(-360deg); */
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+i {
+    font-size: 10rem;
+    margin: auto;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    td>h1 {
+        font-size: 1rem;
+    }
+
+    td>i {
+        font-size: 4rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    td>h1 {
+        font-size: 2rem;
+    }
+
+    td>i {
+        font-size: 8rem;
+    }
+}
