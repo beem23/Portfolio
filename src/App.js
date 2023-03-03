@@ -9,7 +9,7 @@ import './styles/App.css';
 const apiKey = process.env.REACT_APP_API_KEY;
 const url = window.location.href.includes('localhost')
   ? 'http://localhost:3001/data/'
-  : 'https://portfolio-back-end-production-cb83.up.railway.app/';
+  : 'https://portfolio-back-end-production-cb83.up.railway.app/data/';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
