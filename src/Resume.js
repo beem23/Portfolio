@@ -23,7 +23,7 @@ function Resume(props) {
             <i className="fa-light fa-circle-xmark" onClick={handleClick}></i>
             <h1 className={PageH1Background}>Resume</h1>
             <button onClick={downloadResume}>Download</button>
-            <iframe src={resumePDF} width="100%" height="100%" />
+            <iframe title="Resume" src={resumePDF} width="100%" height="100%" />
         </div>
     )
 }
