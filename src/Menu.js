@@ -46,7 +46,7 @@ function Menu(props) {
                 />
             )}
             <h1 onClick={() => togglePopup('Resume')}>Resume</h1>
-            {showPopups.Resume && <Resume ResumePopUp={() => togglePopup('Resume')} />}
+            {showPopups.Resume && <Resume isDarkMode={props.isDarkMode} ResumePopUp={() => togglePopup('Resume')} />}
             <h1 onClick={() => togglePopup('ContactMe')}>Contact Me</h1>
             {showPopups.ContactMe && (
                 <ContactMe
