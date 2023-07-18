@@ -1,5 +1,6 @@
 import React from 'react'
 import { ContactForm } from './ContactForm'
+import FindMe from './FindMe';
 import './styles/ContactMeStyles.css'
 
 function ContactMe(props) {
@@ -13,6 +14,7 @@ function ContactMe(props) {
             <i className="fa-light fa-circle-xmark" onClick={handleClick}></i>
             <h1 className={PageH1Background}>Contact Me</h1>
             <ContactForm />
+            <FindMe />
         </div>
     )
 }

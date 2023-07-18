@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import BackgroundWaves from './BackgroundWaves';
 import TimePull from './TimePull';
 import Menu from './Menu';
-import FindMe from './FindMe';
 import Title from './Title';
 import './styles/App.css';
 
@@ -31,7 +30,6 @@ function App() {
   return (
     <div className="App">
       <Title handleToggle={handleToggle} isDarkMode={isDarkMode} />
-      <FindMe />
       <Menu data={data} isDarkMode={isDarkMode} />
       <TimePull isDarkMode={isDarkMode} />
       <BackgroundWaves isDarkMode={isDarkMode} />

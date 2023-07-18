@@ -1,18 +1,16 @@
 .FindMeContainer {
     width: fit-content;
     height: auto;
-    position: absolute;
-    bottom: 10%;
-    right: 20%;
+    position: relative;
     z-index: 9;
 }
 
 .FindMeContainer>i {
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 8rem;
     cursor: pointer;
     color: aliceblue;
-    transition: color .3s ease-in-out;
+    transition: color .1s ease-in-out;
 }
 
 .FindMeContainer>i:hover {
